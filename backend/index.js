@@ -12,7 +12,7 @@ try {
 const response = await axios.post(
 'https://openrouter.ai/api/v1/chat/completions',
 {
-model: 'google/gemini-pro',
+model: 'google/gemini-2.5-pro',
 messages: [{ role: 'user', content: prompt }],
 },
 {
