@@ -26,7 +26,7 @@ router.post('/', async (req, res) => {
     ];
 
     const payload = {
-      model: "google/gemini-pro", // Puedes cambiar este modelo por otro soportado por OpenRouter, por ejemplo: "mistralai/mistral-7b-instruct", "openai/gpt-3.5-turbo"
+      model: "openai/gpt-3.5-turbo", // Puedes cambiar este modelo por otro soportado por OpenRouter, por ejemplo: "mistralai/mistral-7b-instruct", "openai/gpt-3.5-turbo"
       messages: messages,
       temperature: 0.7, // Puedes ajustar la temperatura para controlar la creatividad (0.0 a 1.0)
     };
