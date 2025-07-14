@@ -80,7 +80,7 @@ function App() {
 
         setRecomendacionIA('Pensando...');
         try {
-            const response = await fetch('https://recomendaciones-backend-gjal.onrender.com/api/recomendaciones', {
+            const response = await fetch('https://recomendaciones-backend-gjal.onrender.com/api/recomendacionesIA', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
