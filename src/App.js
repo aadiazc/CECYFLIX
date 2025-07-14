@@ -26,7 +26,7 @@ function App() {
     useEffect(() => {
         const fetchPeliculas = async () => {
             try {
-                const response = await fetch('http://localhost:4000/api/peliculas');
+                const response = await fetch('https://recomendaciones-backend-gjal.onrender.com');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
