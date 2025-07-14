@@ -11,4 +11,4 @@ services:
       - key: MONGO_URI
         value: mongodb+srv://zolactziry:hd1m8ISwhb0mTEOt@cineversecluster.tlfhwy8.mongodb.net/?retryWrites=true&w=majority&appName=cineverseCluster
       - key: OPENROUTER_API_KEY
-        value: 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
+        value: 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
