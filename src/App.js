@@ -26,7 +26,7 @@ function App() {
     useEffect(() => {
         const fetchPeliculas = async () => {
             try {
-                const response = await fetch('https://recomendaciones-backend-gjal.onrender.com');
+                const response = await fetch('https://recomendaciones-backend-gjal.onrender.com/api/peliculas');
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }
@@ -80,7 +80,7 @@ function App() {
 
         setRecomendacionIA('Pensando...');
         try {
-            const response = await fetch('http://localhost:4000/api/recomendaciones', {
+            const response = await fetch('https://recomendaciones-backend-gjal.onrender.com/api/recomendaciones', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
