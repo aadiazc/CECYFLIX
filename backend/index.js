@@ -12,7 +12,7 @@ try {
 const response = await axios.post(
 'https://openrouter.ai/api/v1/chat/completions',
 {
-model: 'mistralai/mistral-7b-instruct',
+model: 'google/gemma-7b-it',
 messages: [{ role: 'user', content: prompt }],
 },
 {
