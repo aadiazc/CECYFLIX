@@ -47,7 +47,7 @@ router.post('/', async (req, res) => {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': `Bearer ${openRouterApiKey}`, // Encabezado de autorización para OpenRouter
-        'HTTP-Referer': 'http://localhost:3000', // Opcional: tu dominio de referencia
+        'HTTP-Referer': 'https://recomendaciones-backend-gjal.onrender.com', // Opcional: tu dominio de referencia
         'X-Title': 'CineVerse App' // Opcional: nombre de tu aplicación
       },
       body: JSON.stringify(payload)
